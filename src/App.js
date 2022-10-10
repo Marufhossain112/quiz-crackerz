@@ -1,10 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <div className="App">
-    <h2 className='text-4xl'>Hello</h2>
+      <Navbar></Navbar>
+      <h2 className="text-4xl text-green-500">Hello I am groot</h2>
     </div>
   );
 }
