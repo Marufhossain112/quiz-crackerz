@@ -1,14 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes/routes";
 
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
-      <h2 className="text-4xl text-green-500">Hello I am groot</h2>
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }
-
 export default App;
