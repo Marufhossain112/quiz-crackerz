@@ -5,6 +5,9 @@ import icon from "./icon/eye.svg";
 
 const Quizdetails = ({ quiz }) => {
   const { correctAnswer, id, question, options } = quiz;
+  const getCorrectAns = () => {
+    alert(`Correct answer is : ${correctAnswer}`);
+  };
 
   const getValueFromQuiz = (e) => {
     const element = e.target;
@@ -18,13 +21,18 @@ const Quizdetails = ({ quiz }) => {
   return (
     <div className="bg-violet-50 relative">
       <h3 className="text-xl m-[15px] font-bold pt-5">{question}</h3>
-      <img className="absolute left-[85%] top-[7%]" src={icon} alt="" />
+      <img
+        className="absolute left-[85%] top-[7%]"
+        src={icon}
+        alt=""
+        onClick={getCorrectAns}
+      />
       <div className="pb-5">
         {options.map((option) => (
           <div className="flex justify-center">
             <p
               onClick={getValueFromQuiz}
-              className="border border-zinc-600 rounded-lg p-5 w-1/2 my-2 "
+              className="border border-zinc-600 rounded-lg p-5 w-1/2 my-2 hover:bg-cyan-200 hover:text-black "
             >
               {option}
             </p>
