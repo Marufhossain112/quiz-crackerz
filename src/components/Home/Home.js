@@ -1,4 +1,5 @@
 import React from "react";
+import "./Home.css"
 import Homedetails from "../Homedetails/Homedetails"
 import {
   useLoaderData
