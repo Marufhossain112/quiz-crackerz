@@ -8,7 +8,7 @@ const Quiz = () => {
   // console.log(quizQuestions);
   return (
     <div>
-      <h2 className="text-2xl font-bold text-cyan-500 my-5">
+      <h2 className="text-3xl font-bold text-cyan-500 my-5">
         Quiz of {quiz.name}
       </h2>
       <div>
