@@ -9,7 +9,7 @@ const Quizdetails = ({ quiz }) => {
 
   return (
     <div>
-      <h3 className="text-xl">{question}</h3>
+      <h3 className="text-xl m-5">{question}</h3>
       <div>
         {options.map((option) => (
           <Quizoption option={option}></Quizoption>
