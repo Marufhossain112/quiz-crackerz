@@ -1,24 +1,19 @@
 import React, { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 // import Quizoption from "../Quizoption/Quizoption";
 
 const Quizdetails = ({ quiz }) => {
-  //   const [count, setCount] = useState(1);
-  //   console.log(quiz);
   const { correctAnswer, id, question, options } = quiz;
-  // console.log(quiz);
-  // console.log(options);
-  // console.log("Answer:", correctAnswer);
+
   const getValueFromQuiz = (e) => {
     const element = e.target;
     const quizText = element.innerText;
     if (quizText === correctAnswer) {
-      console.log("Right");
-      return true;
+      toast("Congratulations! You are right.");
     } else {
-      console.log("Wrong");
-      return false;
+      toast("Sorry, your answer is wrong.");
     }
-    // console.log(quizText);
   };
   return (
     <div className="bg-violet-50">
@@ -32,6 +27,7 @@ const Quizdetails = ({ quiz }) => {
             >
               {option}
             </p>
+            <ToastContainer></ToastContainer>
           </div>
         ))}
       </div>
