@@ -1,5 +1,4 @@
 import React from "react";
-
 const Blog = () => {
   return (
     <div>
@@ -7,5 +6,4 @@ const Blog = () => {
     </div>
   );
 };
-
 export default Blog;

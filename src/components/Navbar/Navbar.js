@@ -5,7 +5,7 @@ import LInk from "../LInk/LInk";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const routes = [
-    { id: 1, name: "Home", path: "/home" },
+    { id: 1, name: "Home", path: "/" },
     { id: 2, name: "Statistics", path: "/statistics" },
     { id: 3, name: "Blog", path: "/blog" },
   ];
