@@ -6,7 +6,10 @@
   .navbar-home {
     margin-bottom: 5rem;
   }
+  .navbar-home ul{
+    margin-left: 22px;
+  }
   .logo{
-    margin-right: 10%;
+    margin-right: 12%;
   }
 }
