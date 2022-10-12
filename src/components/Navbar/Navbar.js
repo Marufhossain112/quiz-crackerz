@@ -33,7 +33,7 @@ const Navbar = () => {
           open ? "top-6" : "top-[-140px]"
         }`}
       >
-        <li className="mr-[60%] font-bold text-2xl">
+        <li className="mr-[60%] font-bold text-2xl logo">
           <span className="text-green-500 text-3xl">Q</span>ui
           <span className="text-violet-700 text-3xl">Z</span>one
           <span className="text-red-500 text-3xl"> M</span>ax
