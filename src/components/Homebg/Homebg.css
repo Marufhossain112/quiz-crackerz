@@ -1,0 +1,17 @@
+@media screen and (min-width: 320px) and (max-width: 420px) {
+  .home-bg {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    height: 50vh !important;
+    background-position: center !important;
+  }
+  .intro {
+    left: 8%;
+  }
+  .intro h2 {
+    font-size: 2.3rem;
+  }
+  .intro p {
+    font-size: 1.3rem;
+  }
+}
