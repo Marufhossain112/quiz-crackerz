@@ -1,15 +1,11 @@
 import React from "react";
-import {
-  Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const LInk = ({
-  route
-}) => {
+const LInk = ({ route }) => {
   return (
-    <li className="mr-12">
-        <Link to={route.path}>{route.name}</Link>
-      </li>
+    <li className="mr-12 hover:text-teal-500 duration-200 font-medium">
+      <Link to={route.path}>{route.name}</Link>
+    </li>
   );
 };
 
