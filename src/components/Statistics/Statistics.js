@@ -4,6 +4,7 @@ import {
   Area,
   AreaChart,
   CartesianGrid,
+  ResponsiveContainer,
   Tooltip,
   XAxis,
   YAxis,
@@ -13,7 +14,8 @@ const Statistics = () => {
   const data = useLoaderData().data;
   // console.log(data);
   return (
-    <div className="flex justify-center mt-20">
+    <ResponsiveContainer width="95%" height={400}>
+      {/* <div className="flex justify-center mt-20"> */}
       <AreaChart
         width={730}
         height={250}
@@ -49,7 +51,8 @@ const Statistics = () => {
           fill="url(#colorPv)"
         />
       </AreaChart>
-    </div>
+      {/* </div> */}
+    </ResponsiveContainer>
   );
 };
 
