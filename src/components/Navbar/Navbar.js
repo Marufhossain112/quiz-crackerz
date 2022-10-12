@@ -23,7 +23,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <nav className="w-full  py-3 mb-10 navbar-home">
+    <nav className="w-full  py-3 mb-10 navbar-home shadow-xl">
       <div onClick={() => setOpen(!open)} className="  h-6 w-6 md:hidden ">
         {/* {open ? <XMarkIcon /> : <Bars3Icon />} */}
         {open ? <XMarkIcon /> : <Bars3Icon />}
