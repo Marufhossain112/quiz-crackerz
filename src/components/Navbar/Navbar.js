@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import LInk from "../Link/Link";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -22,7 +23,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <nav className="w-full bg-slate-500 py-3 mb-10">
+    <nav className="w-full bg-slate-500 py-3 mb-10 navbar-home">
       <div
         onClick={() => setOpen(!open)}
         className=" bg-slate-500 h-6 w-6 md:hidden "
