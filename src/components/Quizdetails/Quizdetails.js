@@ -11,7 +11,7 @@ const Quizdetails = ({ quiz }) => {
   };
   const getValueFromQuiz = (e) => {
     // console.log(e);
-    
+
     const element = e.target;
     const quizText = element.innerText;
     if (quizText === correctAnswer) {
